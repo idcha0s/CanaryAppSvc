@@ -59,3 +59,22 @@ AzureDiagnostics
 | project TimeGenerated, OperationName, oid, app_id, CallerIPAddress, src_network, Resource, httpStatusCode_d, CorrelationId
 | order by TimeGenerated
 ```
+
+## Azure App Services
+
+You can deploy this application into as many regions as you'd like to simulate traffic to, just ensure that you are enabling virtual network integration for each instance of your App Service and that you have a subnet delegated to it. It is also helpful to direct your diagnostics logging for your App Service instances to the same Log Analytics workspace. You can query for the AppService logs like so:
+
+If you are doing inbound restrictions to your App Service you can query the AppServiceIPSecAuditLogs to see which rule allowed access to the web app:
+
+```kusto
+AppServiceIPSecAuditLogs 
+| order by TimeGenerated
+```
+
+To see traffic from the App Service health checks as well as your external access requests allowed through the App Service resource firewall, use the AppServiceHTTPLogs as such:
+
+```kusto
+AppServiceHTTPLogs 
+| project TimeGenerated, CsMethod, CsUriStem, CIp, ComputerName, TimeTaken, UserAgent, ScStatus, CsUriQuery, Referer
+| order by TimeGenerated
+```
