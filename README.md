@@ -2,7 +2,7 @@
 
 Sample test harness providing a Web App to run in App Service fetching secrets from various Azure Key Vaults. This harness is designed to generate signal for testing and validating changes to the vault resource firewall, service endpoint and private endpoint configurations.
 
-By default the sample code provides an app.Get() for five pages, representing three sample vaults:
+By default the sample code provides an app.MapGet() for five pages, representing three sample vaults:
 
 1. "/" - the root page with no active code. Use this page to test that the app is loading without calling a vault. Start by configuring your AppService health checks to this page.
 1. "/cus" - sample - represents the page used to reach a vault in the Central US region.
