@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "LcG5ftqRrqx74QVgcra9d9CrciLUVXux7h2wk7TYqJwh6VLPaYFIVwXoqwZJJh9uOskHqn3llltMu1Pm0mfD9w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bst2k\\source\\CanaryAppSvc\\CanaryAppSvc.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bst2k\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
+    "C:\\Users\\bst2k\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\bst2k\\.nuget\\packages\\azure.security.keyvault.secrets\\4.4.0\\azure.security.keyvault.secrets.4.4.0.nupkg.sha512",
+    "C:\\Users\\bst2k\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\bst2k\\.nuget\\packages\\microsoft.identity.client\\4.39.0\\microsoft.identity.client.4.39.0.nupkg.sha512",
+    "C:\\Users\\bst2k\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\2.19.3\\microsoft.identity.client.extensions.msal.2.19.3.nupkg.sha512",
+    "C:\\Users\\bst2k\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
+    "C:\\Users\\bst2k\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\bst2k\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
+    "C:\\Users\\bst2k\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\bst2k\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.7.0\\system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
+    "C:\\Users\\bst2k\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
+    "C:\\Users\\bst2k\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
+    "C:\\Users\\bst2k\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

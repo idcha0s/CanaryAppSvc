@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ct4LTdHbtfhnTyAjOUrxtTaJ/yhaeYM2GhOCdr8v830=",
+  "Source": "CanaryAppSvc",
+  "BasePath": "_content/CanaryAppSvc",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
