@@ -61,7 +61,6 @@ AzureDiagnostics
     (isempty(isAddressAuthorized_b) and httpStatusCode_d == 200 and OperationName !in ("GetPrivateLinkResources","GetPrivateEndpointConnectionProxy","PostPrivateEndpointConnectionProxyValidate","PutPrivateEndpointConnectionProxy","Authentication","VaultGet","VaultPut","VaultDelete","VaultPatch","VaultList","VaultPurge","VaultRecover","VaultGetDeleted","VaultListDeleted","VaultAccessPolicyChangedEventGridNotification")),strcat("dataPlane/insufficient_info"),
     isnotempty(httpStatusCode_d),strcat("unknown/", OperationName, "/", tostring(httpStatusCode_d)),
     "")
-//| where CorrelationId == "6baed5a1-6648-49ce-a570-9507d755812f"
 | project TimeGenerated, OperationName, oid, app_id, CallerIPAddress, src_network, Resource, httpStatusCode_d, CorrelationId
 | order by TimeGenerated
 ```
