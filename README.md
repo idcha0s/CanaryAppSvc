@@ -34,6 +34,12 @@ There are three sections in the json you'll need to configure with your vault in
 1. Vaults - this is the list that the /all page will cycle through on page load
 1. RegionalVaults - this is the list parsed on individual targeted page load. The page will use the current path as the key to retrieve the vault name.
 
+## Managed Identity
+
+The client uses DefaultAzureCredential() to connect to the remote vault - no secrets are needed in the configuration to authenticate. You must ensure that your App Service has been configured to use a System Assigned Managed Identity. You will be able to identify the object ID of your MI in the logs in the `oid` field. Refer to the AzureDiagnostics Query below.
+
+This should also work during debug as it should pull your Azure user principal. To authenticate to the App Service using Azure AD, make sure you've enabled Authentication on your App Service for your AAD tenant.
+
 ## AzureDiagnostics logging
 
 To make testing easier, it is recommended that you enable Diagnostics logging on each vault, and configure them to log to a common Log Analytics workspace. From that workspace you can run the following query to see how each vault is being accessed:
