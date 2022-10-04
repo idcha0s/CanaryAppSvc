@@ -1,6 +1,6 @@
 # CanaryAppSvc
 
-Sample test harness providing a Web App to run in App Service fetching secrets from various Azure Key Vaults. This harness is designed to generate signal for testing and validating changes to the vault resource firewall, service endpoint and private endpoint configurations.
+This is a sample test harness in ASP.NET Core 6.0 providing a Web App to run in App Service fetching secrets from various Azure Key Vaults. This harness is designed to generate signal for testing and validating changes to the vault resource firewall, service endpoint and private endpoint configurations.
 
 By default the sample code provides an app.MapGet() for five pages, representing three sample vaults:
 
